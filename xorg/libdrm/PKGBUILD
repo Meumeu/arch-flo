@@ -2,10 +2,10 @@
 # Maintainer: Jan de Groot <jgc@archlinux.org>
 
 pkgname=libdrm
-pkgver=2.4.52
+pkgver=2.4.58
 pkgrel=1
 pkgdesc="Userspace interface to kernel DRM services"
-arch=(i686 x86_64)
+arch=(armv7h)
 license=('custom')
 depends=('glibc' 'libpciaccess')
 makedepends=('valgrind')

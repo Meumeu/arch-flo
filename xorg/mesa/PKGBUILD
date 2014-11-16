@@ -4,9 +4,9 @@
 
 pkgbase=mesa
 pkgname=('freedreno-dri' 'mesa' 'mesa-libgl')
-pkgver=10.0.3
+pkgver=10.4.0
 pkgrel=1
-arch=('i686' 'x86_64')
+arch=(armv7h)
 makedepends=('python2' 'libxml2' 'libx11' 'glproto' 'libdrm' 'dri2proto' 'libxxf86vm' 'libxdamage'
              'libvdpau' 'wayland' 'elfutils' 'systemd')
 url="http://mesa3d.sourceforge.net"
