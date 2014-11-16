@@ -8,7 +8,7 @@ pkgver=10.4.0
 pkgrel=1
 arch=(armv7h)
 makedepends=('python2' 'libxml2' 'libx11' 'glproto' 'libdrm' 'dri2proto' 'libxxf86vm' 'libxdamage'
-             'libvdpau' 'wayland' 'elfutils' 'systemd')
+             'libvdpau' 'wayland' 'elfutils' 'systemd', 'git')
 url="http://mesa3d.sourceforge.net"
 license=('custom')
 options=(debug !strip)
@@ -31,7 +31,7 @@ build() {
     --sysconfdir=/etc \
     --with-dri-driverdir=/usr/lib/xorg/modules/dri \
     --with-dri-drivers= --with-gallium-drivers=freedreno,swrast \
-  --with-egl-platforms=x11 --enable-gles2 --enable-gles1 \
+  --with-egl-platforms=x11,wayland --enable-gles2 --enable-gles1 \
   --enable-gallium-egl --disable-gallium-llvm --enable-xa --disable-dri3 \
   --enable-gbm
   #--enable-debug
